@@ -39,7 +39,9 @@ jobs:
       - name: Invalidate CloudFront cache
         if: success()
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          if [ ! -z "${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}" ]; then
+            aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          fi
 
       - name: Deployment Success
         if: success()
