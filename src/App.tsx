@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 
-// v1.0.0 - Production deployment with secrets configured
+// v1.0.1 - Updated production deployment with secrets configured
 import Expenses from "./pages/Expenses";
 import Profile from "./pages/Profile";
 import Files from "./pages/Files";
