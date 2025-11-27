@@ -45,8 +45,8 @@ jobs:
 
       - name: Deployment Success
         if: success()
-        run: echo "✅ Frontend deployed successfully to S3!"
+        run: echo " Frontend deployed successfully to S3!"
 
       - name: Deployment Failed
         if: failure()
-        run: echo "❌ Deployment failed"
+        run: echo " Deployment failed"
