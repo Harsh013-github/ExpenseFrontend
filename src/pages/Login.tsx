@@ -60,7 +60,7 @@ export default function Login() {
           <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-primary shadow-lg">
             <Wallet className="h-8 w-8 text-primary-foreground" />
           </div>
-          <h1 className="text-3xl font-bold">Welcome Back</h1>
+          <h1 className="text-3xl font-bold">Welcome To FInance tracker</h1>
           <p className="text-muted-foreground">Sign in to your Finance Tracker account</p>
         </div>
 
